@@ -15,3 +15,6 @@ Route::get('think', function () {
 });
 
 Route::get('hello/:name', 'index/hello');
+Route::get('first/[:id]', function($id=0){
+    return 'hello'.$id;
+});
